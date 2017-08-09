@@ -1,0 +1,148 @@
+<ion-view ng-controller="homeCtrl">
+    <ion-content>
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="First Name" ng-model="search.firstName">
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Middle Name</span>
+    <input type="text" placeholder="First Name" ng-model="search.middleName">
+  </label>
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Last Name</span>
+    <input type="text" placeholder="Last Name" ng-model="search.lastName">
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">year of birth</span>
+    <input type="number" placeholder="year of birth" ng-model="search.yob">
+  </label>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      PIN
+    </div>
+    <select ng-model="search.pin">
+      <option>560003</option>
+      <option>560010</option>
+      <option>560019</option>
+      <option>560040</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+     suburb
+    </div>
+    <select ng-model="search.suburb">
+      <option>HanumanthaNagara</option>
+      <option>Malleshvara</option>
+      <option>RajajiNagara</option>
+      <option>VijayaNagara</option>
+    </select>
+  </label>
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+     gothra
+    </div>
+    <select ng-model="search.gothra">
+      <option>Aathreyasa</option>
+      <option>Bhaaradvaaja</option>
+      <option>Gauthama</option>
+      <option>Kaundinya</option>
+    </select>
+  </label>
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+     veda
+    </div>
+    <select ng-model="search.veda">
+      <option>Ruk</option>
+      <option>Saama</option>
+      <option>Yajus</option>
+    </select>
+  </label>
+
+   <label class="item item-input item-select">
+    <div class="input-label">
+     Education
+    </div>
+    <select ng-model="search.education">
+      <option>BE</option>
+      <option>B.Com</option>
+      <option>B.A</option>
+      <option>BSC</option>
+      <option>diploma</option>
+      <option>MBBS</option>
+      <option>SSLC</option>
+    </select>
+  </label>
+
+   <label class="item item-input item-select">
+    <div class="input-label">
+     occupation
+    </div>
+    <select ng-model="search.occupation">
+      <option>business</option>
+      <option>govt job</option>
+      <option>pvt job</option>
+      <option>unemployed</option>
+    </select>
+  </label>
+
+   <label class="item item-input item-select">
+    <div class="input-label">
+     hobbies
+    </div>
+    <select ng-model="search.hobbies">
+      <option>cricket</option>
+      <option>football</option>
+      <option>meditation</option>
+      <option>music</option>
+      <option>painting</option>
+      <option>travel</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+     marital status
+    </div>
+    <select ng-model="search.maritalStatus">
+      <option>married & continuing</option>
+      <option>married but divorced</option>
+      <option>married but widowed</option>
+      <option>not yet married</option>
+    </select>
+  </label>
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+     no. of sons
+    </div>
+    <select ng-model="search.numOfSons">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      
+    </select>
+  </label>
+  <label class="item item-input item-select">
+    <div class="input-label">
+     no. of daughters
+    </div>
+    <select ng-model="search.numOfDaughters">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+          </select>
+  </label>
+  <button class="button button-calm" style="margin:2vh 0 0 20vh;" ng-click="submit()">Submit</button>
+</div>
+    </ion-content>
+</ion-view>

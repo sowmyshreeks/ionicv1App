@@ -1,0 +1,20 @@
+<ion-view ng-controller="searchCtrl">
+    <ion-content>
+    <div>
+    <button class="button icon ion-arrow-left-c" ng-click="back()"></button>
+    <br>
+    <br>
+    List of Mached Profiles
+
+<div class="list" ng-repeat="x in names">
+
+    <a class="item item-avatar" ng-click="display(x)">
+      <img src="../img/venkman.jpg">
+      <h2>{{x.firstName}}</h2>
+      
+    </a>
+</div>
+
+    </div>
+    </ion-content>
+</ion-view>
